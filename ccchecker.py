@@ -6,7 +6,6 @@ import json
 import requests
 import random
 
-#Made By Bheemesh
 
 
 succcess = open("cvc.txt", "a")
